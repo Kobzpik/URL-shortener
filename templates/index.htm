@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.htm' %} {% block content %}
+<br>
+<br>
+<div class="jumbotron">
+    <center>
+        <h1>URLShort Url Shortener</h1>
+        <a href="/create/"><button type="button" class="btn btn-secondary">Create New URL</button></a>
+    </center>
+</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL_Shotner</title>
-</head>
-
-<body>
-    <h1>Helloo world</h1>
-</body>
-
-</html>
+<div class="jumbotron">
+    <center>
+        <h3>My Projects</h3>
+        <a><button type="button"
+                class="btn btn-primary">Here</button></a>
+    </center>
+</div>
+{% endblock content %}
