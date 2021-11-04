@@ -5,3 +5,9 @@ from django.http import HttpResponse
 
 def home(request):
     return render(request, 'index.htm')
+
+def createurl(request):
+    pass
+
+def res(request):
+    pass
