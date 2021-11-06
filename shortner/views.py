@@ -20,14 +20,14 @@ def result(request, url):
 #create new short URL
 def createShortURL(request):
     if request.method == 'POST':
-        form = createShortURL(request.POST) #Create new form
+        form = createNewURL(request.POST) #Create new form
         if form.is_valid():
             original_website = form.cleaned_data['original_url']
             random_chars_list = list(string.ascii_letters)
             random_chars =''
             for i in range(6):
                 random_chars += random.choice(random_chars_list)
-            while len(ShortURL.object.filter(short_url=random_chars)) !=0:
+            while len(ShortURL.objects.filter(short_url=random_chars)) !=0:
                 for i in range(6):
                     random_chars += random.choice(random_chars_list)
             
