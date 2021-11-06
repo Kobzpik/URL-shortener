@@ -1,8 +1,11 @@
 {% extends 'base.htm' %} {% block content %}
-<div class="jumbotron">
-    <h1>Error: Page Not Found :(</h1>
-    <a href="/"><button type="button" class="btn btn-info ml-3 mr-3"
+<div class="jumbotron ">
+    <h1 class="d-flex justify-content-center">Error: Page Not Found :(</h1>
+    <div class="d-flex justify-content-center">
+        <a href="/"><button type="button" class="btn btn-success ml-3 mr-3"
             style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Home</button></a>
-    <a href="/"><button type="button" class="btn btn-dark ml-3 mr-3">Create New URL</button></a>
+        <a href="/create/"><button type="button" class="btn btn-success ml-3 mr-3">Create New URL</button></a>
+    </div>
+
 </div>
 {% endblock content %}
