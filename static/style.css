@@ -27,6 +27,12 @@ nav.navbar {
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
 
+nav.navbar .navbar-nav .nav-item .nav-link {
+    padding: .5rem;
+    color: rgb(245, 241, 241);
+    transition: .3s;
+}
+
 
 /*templa page(page content)*/
 
